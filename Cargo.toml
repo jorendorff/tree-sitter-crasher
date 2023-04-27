@@ -1,0 +1,8 @@
+[package]
+name = "blackbird-symbols"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tree-sitter = "0.20.6"
+tree-sitter-c = "0.20.2"
