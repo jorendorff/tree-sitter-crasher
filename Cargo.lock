@@ -12,14 +12,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "blackbird-symbols"
-version = "0.1.0"
-dependencies = [
- "tree-sitter",
- "tree-sitter-c",
-]
-
-[[package]]
 name = "cc"
 version = "1.0.79"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -50,19 +42,26 @@ checksum = "f162c6dd7b008981e4d40210aca20b4bd0f9b60ca9271061b07f78537722f2e1"
 
 [[package]]
 name = "tree-sitter"
-version = "0.20.9"
+version = "0.20.10"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d4423c784fe11398ca91e505cdc71356b07b1a924fc8735cfab5333afe3e18bc"
+checksum = "e747b1f9b7b931ed39a548c1fae149101497de3c1fc8d9e18c62c1a66c683d3d"
 dependencies = [
  "cc",
  "regex",
 ]
 
 [[package]]
-name = "tree-sitter-c"
-version = "0.20.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "cca211f4827d4b4dc79f388bf67b6fa3bc8a8cfa642161ef24f99f371ba34c7b"
+name = "tree-sitter-crasher"
+version = "0.2.0"
+dependencies = [
+ "tree-sitter",
+ "tree-sitter-scala",
+]
+
+[[package]]
+name = "tree-sitter-scala"
+version = "0.20.7"
+source = "git+https://github.com/tree-sitter/tree-sitter-scala?rev=32b400e380cdbcad9c44ae2690ace081b790c18e#32b400e380cdbcad9c44ae2690ace081b790c18e"
 dependencies = [
  "cc",
  "tree-sitter",
